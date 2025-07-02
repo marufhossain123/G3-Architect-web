@@ -122,31 +122,114 @@ max-width: 576px;
   font-size:2.8rem ;
   font-weight: 500;
 }
-.fetures{
-  color: #FF900E;
+.section-title{
+  font-size: 2.8rem;
+  font-weight: bold;
+ 
+}.fetures{  color: #FF900E;
   font-size: 2.9rem;
   font-weight: 600;
+}
+/* fact section styles */
+.section-description{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+.fact-card{
+  border: 1px solid #FF900E;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+   margin-top: 5px;
+  margin-bottom: 5px;
+}
+.fact-name{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+/* sponsor related section  */
+.sponsor{
+  max-width: 550px;
+  margin: 50px auto;
+  text-align: center;
+
+}
+.sponsor-title{
+  font-size: 2.8rem;
+  font-weight: bold;
+
+}
+.sponsor-description{
+  font-size:1rem ;
+  font-style: 400;
+  margin-top: 20px;
+}
+.logo-container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+
+}
+.logo-container img{
+  filter: grayscale(100%);
 }
 
 @media screen and (max-width: 576px) {
   .nav-bar,.display-flex, .team{
     flex-direction: column;
   }
-  .team-img-container{
-    grid-template-columns: repeat(1,1fr);
+  .team-img-container,.fact-container{
+    grid-template-columns: repeat(1, 1fr);
   }
+  .fact-container{
+    justify-items: center;
+    gap: 24px;
+  }
+  .temp{
+    text-align: center;
+  }
+
   .team-content-container{
     margin-left: 20px;
     padding: 50px;
   }
+  .logo-container{
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    
+  justify-items: center;
+
+  }
+  .logo-container img{
+    width: 60%;
+  }
 }
-@media  screen and (min-width:576px) and (max-width: 992px){
+@media  screen and (min-width:575px) and (max-width: 992px){
 
   .team{
     flex-direction: column;
   }
    .team-content-container{
     margin: 50px auto;
+   }
+   .fact-container,.logo-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    justify-items: center;
    }
 
 }
