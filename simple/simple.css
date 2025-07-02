@@ -122,11 +122,59 @@ max-width: 576px;
   font-size:2.8rem ;
   font-weight: 500;
 }
+
+
+/* feature section title  */
+.features-container{
+  display: flex;
+  gap: 146px;
+
+}
+#feature-section-title{
+  border-left: 5px solid rgb(255, 144, 14);
+  padding-left:30px ;
+
+}
+.feature-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+
+}
 .section-title{
   font-size: 2.8rem;
   font-weight: bold;
  
-}.fetures{  color: #FF900E;
+}
+.feature-description{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.feature-card-title{
+  font-size: 1.25rem;
+  font-weight: 600;
+    margin-top: 0px;
+  margin-bottom: 0px;
+} 
+.feature-card{
+  border-radius: 8px;
+padding: 30px;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+background: rgb(255, 255, 255);
+margin-bottom: 20px;
+}
+#experience-btn{
+  padding: 45px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -80px;
+}
+.experience-year{
+font-size: 4rem;
+font-weight: 700;
+}
+/*  */
+.fetures{  color: #FF900E;
   font-size: 2.9rem;
   font-weight: 600;
 }
@@ -187,9 +235,21 @@ max-width: 576px;
 .logo-container img{
   filter: grayscale(100%);
 }
+.foot{
+  border-radius: 8px;
+height: 6rem;
+background: rgb(255, 244, 231);
+
+}
+.foot-title{
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 40px 400px;
+  text-align: center;
+}
 
 @media screen and (max-width: 576px) {
-  .nav-bar,.display-flex, .team{
+  .nav-bar,.display-flex,.features-container, .team{
     flex-direction: column;
   }
   .team-img-container,.fact-container{
@@ -217,10 +277,28 @@ max-width: 576px;
   .logo-container img{
     width: 60%;
   }
+  .feture-img img{
+width: 100%; 
+
+  }
+  #experience-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .foot{
+width: 100%;
+
+height: 150px;
+  }
+  .foot-title{
+text-align: center;
+padding: 5px;
+  }
 }
 @media  screen and (min-width:575px) and (max-width: 992px){
 
-  .team{
+  .features-container, .team{
+  
     flex-direction: column;
   }
    .team-content-container{
@@ -231,5 +309,9 @@ max-width: 576px;
     gap: 30px;
     justify-items: center;
    }
+    #experience-btn{
+    margin-left: 40px;
+    /* margin-bottom: 20px; */
+  }
 
 }
